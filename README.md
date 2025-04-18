@@ -1,94 +1,113 @@
-# OptiBot
-OptiBot – SEO IA Analyzer
-OptiBot es una aplicación web construida con Streamlit y la API de OpenAI que permite analizar de forma automática el SEO de cualquier página web. Obtén insights sobre títulos, descripciones, encabezados, imágenes, enlaces y recomendaciones de mejora generadas por IA.
+🚀 OptiBot – SEO IA Analyzer
+OptiBot es una aplicación web construida con Streamlit y la API de OpenAI que analiza de forma automática el SEO de cualquier página web. Ofrece insights detallados sobre títulos, descripciones, encabezados, imágenes, enlaces y recomendaciones optimizadas mediante inteligencia artificial.
 
-🚀 Características
+✨ Características
+🔍 Análisis de contenido: Extrae título, meta descripción, encabezados H1 y conteo de palabras.
 
-Análisis de contenido: Título, meta descripción, encabezados H1 y conteo de palabras.
+🖼️ Revisión de imágenes: Detecta imágenes sin texto alternativo (alt) y muestra el total.
 
-Revisión de imágenes: Número total de imágenes y detección de aquellas sin alt text.
+🔗 Detección de enlaces: Lista y clasifica enlaces internos y externos.
 
-Detección de enlaces: Conteo y listado de enlaces internos y externos.
+🤖 Recomendaciones IA: Sugerencias SEO generadas por modelos de lenguaje (GPT-3.5 o GPT-4).
 
-Sugerencias con IA: Evaluación y recomendaciones de SEO generadas por GPT-3.5 / GPT-4.
+🔄 Fallback de modelo: Cambia automáticamente a GPT-3.5 si GPT-4 no está disponible.
 
-Fallback de modelo: Si el modelo seleccionado no está disponible, reintenta automáticamente con gpt-3.5-turbo.
-
-Gestión de credenciales: Genera y carga tu API key de OpenAI en un archivo .env de forma segura.
+🔐 Gestión segura de credenciales: Usa archivo .env para tu clave API de OpenAI.
 
 🛠️ Requisitos
-
 Python 3.8 o superior
 
-Una clave de API válida de OpenAI
+Una clave API válida de OpenAI
 
 Conexión a internet
 
 📦 Instalación
+Clona el repositorio:
 
-Clona el repositorio
-
+bash
+Copiar
+Editar
 git clone https://github.com/LuisGabrielMelo/OptiBot.git
-
 cd optibot
+Crea y activa un entorno virtual:
 
-Crea y activa un entorno virtual
+macOS / Linux:
 
+bash
+Copiar
+Editar
 python -m venv venv
-source venv/bin/activate  # macOS/Linux
-venv\Scripts\activate   # Windows
+source venv/bin/activate
+Windows:
 
-Instala las dependencias
+bash
+Copiar
+Editar
+python -m venv venv
+venv\Scripts\activate
+Instala las dependencias:
 
+bash
+Copiar
+Editar
 pip install -r requirements.txt
+🔑 Configuración
+Crea un archivo .env en la raíz del proyecto (se crea automáticamente al ejecutar la app por primera vez).
 
-🔑 Configuración de variables de entorno
+Añade tu clave de OpenAI:
 
-Asegúrate de contar con el archivo .env en la raíz (se crea automáticamente la primera vez que ejecutas la app).
-
-Define tu API Key de OpenAI:
-
+env
+Copiar
+Editar
 OPENAI_API_KEY=sk-...tu_clave...
+Asegúrate de que el archivo .env está en .gitignore para proteger tu clave.
 
-Verifica que .env está incluido en .gitignore para no subirlo al repositorio.
+▶️ Ejecución
+Inicia la app con:
 
-▶️ Cómo ejecutar
-
+bash
+Copiar
+Editar
 streamlit run optibot.py
-
-Abre el navegador en la URL que indica Streamlit (por defecto http://localhost:8501).
-
-Ingresa la URL de la página a analizar.
-
-Selecciona el modelo (gpt-4 o gpt-3.5-turbo).
-
-Haz clic en Analizar y obtén el reporte SEO.
+Luego abre el navegador en la URL que aparece (por defecto: http://localhost:8501).
 
 📚 Uso
+Ingresa la URL completa del sitio a analizar (ej. https://tusitio.com).
 
-Ingresa la URL completa de la página (ej. https://tusitio.com).
+Selecciona el modelo: gpt-4 o gpt-3.5-turbo.
 
-Elige el modelo de IA.
+Haz clic en Analizar.
 
-Revisa los datos encontrados y las sugerencias generadas:
+Visualiza el reporte SEO con:
 
-Calidad del contenido y recomendaciones de títulos/meta/H1.
+Diagnóstico del contenido.
 
-Palabra clave principal.
+Palabra clave principal detectada.
+
+Recomendaciones sobre títulos, descripciones, encabezados.
 
 Optimización de imágenes.
 
-Estrategia de enlaces.
+Estrategia de enlaces internos y externos.
 
-🧩 Estructura del proyecto
-
+📁 Estructura del proyecto
+bash
+Copiar
+Editar
 optibot/
-├── optibot.py         # Lógica principal de la app
-├── requirements.txt   # Dependencias del proyecto
-├── .env               # Variables de entorno (no en Git)
-└── .gitignore         # Archivos ignorados por Git
-
+├── optibot.py          # Lógica principal de la app
+├── requirements.txt    # Dependencias
+├── .env                # Variables de entorno (ignorado por Git)
+└── .gitignore          # Exclusiones de Git
 🤝 Contribuciones
+¡Contribuciones son bienvenidas! Puedes:
 
-¡Las contribuciones son bienvenidas! Siéntete libre de abrir issues o pull requests para mejorar funciones, corregir bugs o añadir documentación.
+Reportar errores (issues)
+
+Proponer mejoras
+
+Enviar pull requests
+
+Ayudemos a mejorar el SEO con IA, ¡juntos!
+
 
