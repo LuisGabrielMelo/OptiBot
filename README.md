@@ -29,6 +29,7 @@ Conexión a internet
 Clona el repositorio
 
 git clone https://github.com/LuisGabrielMelo/OptiBot.git
+
 cd optibot
 
 Crea y activa un entorno virtual
