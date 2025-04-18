@@ -1,5 +1,5 @@
 # OptiBot
- OptiBot – SEO IA Analyzer
+OptiBot – SEO IA Analyzer
 OptiBot es una aplicación web construida con Streamlit y la API de OpenAI que permite analizar de forma automática el SEO de cualquier página web. Obtén insights sobre títulos, descripciones, encabezados, imágenes, enlaces y recomendaciones de mejora generadas por IA.
 
 🚀 Características
